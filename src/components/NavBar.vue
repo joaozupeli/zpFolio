@@ -48,7 +48,7 @@ onMounted(() => {
         :class="{ active: activeSection === section }"
         @click.prevent="scrollTo(section)"
       >
-        {{ section }}
+        {{ section === 'work' ? 'Trabalhos' : section === 'about' ? 'Sobre' : 'Contato' }}
       </a>
     </div>
   </nav>
@@ -61,11 +61,10 @@ onMounted(() => {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   z-index: 100;
-  mix-blend-mode: difference;
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0) 100%);
 }
 
 .nav-logo {
@@ -75,28 +74,41 @@ onMounted(() => {
   text-decoration: none;
   letter-spacing: -0.02em;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  padding: 0.35rem;
 }
 
 .nav-links a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.02em;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
+  padding: 0.45rem 1.2rem;
+  border-radius: 100px;
 }
 
 .nav-links a:hover {
-  opacity: 0.5;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .nav-links a.active {
-  opacity: 0.5;
+  color: #fff;
+  background: rgba(100, 108, 255, 0.15);
+  border: 1px solid rgba(100, 108, 255, 0.25);
 }
 </style>

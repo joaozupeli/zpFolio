@@ -10,7 +10,7 @@ const photoWrapper = ref<HTMLElement | null>(null)
 const scrollIndicator = ref<HTMLElement | null>(null)
 const roleTag = ref<HTMLElement | null>(null)
 
-const headlineText = 'Crafting Scalable Back-end Systems with Architectural Precision.'
+const headlineText = 'Construindo Sistemas Back-end Escaláveis com Precisão Arquitetural.'
 const displayedText = ref('')
 
 onMounted(() => {
@@ -83,31 +83,31 @@ onMounted(() => {
   <section id="home" class="hero">
     <div class="hero-layout">
       <div class="hero-content">
-        <span ref="roleTag" class="role-tag">Software Engineer — Back-end</span>
+        <span ref="roleTag" class="role-tag">Software Engineer — Back-end Dev</span>
         <h1 ref="headline" class="hero-title">
           <span class="typed-text">{{ displayedText }}</span>
           <span ref="cursor" class="cursor">|</span>
         </h1>
         <div ref="summary" class="hero-summary">
           <p>
-            As a Software Engineer specialized in Back-end Development,
-            I bridge the gap between complex business logic
-            and high-performance infrastructure.
+            Como Software Engineer especializado em Back-end Development,
+            conecto a lógica de negócio complexa
+            com infraestrutura de alta performance.
           </p>
           <p>
-            My approach is deeply rooted in
-            <span class="highlight">SOLID principles</span> and
+            Minha abordagem é fundamentada em
+            <span class="highlight">SOLID principles</span> e
             <span class="highlight">Microservices architecture</span>,
-            ensuring that every API I build is not just functional,
-            but resilient and maintainable.
+            garantindo que toda API que construo não seja apenas funcional,
+            mas resiliente e maintainable.
           </p>
           <p class="summary-secondary">
-            With a solid foundation in Node.js (TypeScript) and Java,
-            I design RESTful ecosystems that power modern digital experiences.
+            Com uma base sólida em Node.js (TypeScript) e Java,
+            projeto ecosystems RESTful que alimentam experiências digitais modernas.
           </p>
           <p class="summary-secondary">
-            From containerization with Docker to automated deployment
-            through CI/CD pipelines.
+            Desde containerization com Docker até deployment automatizado
+            através de CI/CD pipelines.
           </p>
         </div>
         <div ref="socialLinks" class="social-links">
@@ -137,7 +137,7 @@ onMounted(() => {
       </div>
     </div>
     <div ref="scrollIndicator" class="scroll-indicator">
-      <span class="scroll-text">scroll</span>
+      <span class="scroll-text">rolar</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -166,8 +166,8 @@ onMounted(() => {
 
 .hero-photo {
   flex-shrink: 0;
-  width: 340px;
-  height: 440px;
+  width: 540px;
+  height: 750px;
   position: relative;
   margin-left: -1rem;
 }

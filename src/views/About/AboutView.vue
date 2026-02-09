@@ -11,7 +11,7 @@ const pillars = [
     items: [
       { label: 'Architecture', value: 'Microservices, Event-Driven Design, SOLID Principles' },
       { label: 'Languages', value: 'TypeScript / JavaScript, Java' },
-      { label: 'APIs', value: 'Designing and documenting secure RESTful APIs' },
+      { label: 'APIs', value: 'Designing e documentando APIs RESTful seguras' },
     ],
   },
   {
@@ -78,8 +78,8 @@ onMounted(() => {
 
 <template>
   <section id="about" class="about-section">
-    <span class="section-label">02 / Skills</span>
-    <h2 class="page-title">Technical Stack</h2>
+    <span class="section-label">02 / Habilidades</span>
+    <h2 class="page-title">Stack Técnica</h2>
     <div class="skills-grid">
       <div v-for="pillar in pillars" :key="pillar.title" class="pillar">
         <h3 class="pillar-title">{{ pillar.title }}</h3>

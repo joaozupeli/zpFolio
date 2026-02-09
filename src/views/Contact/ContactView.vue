@@ -59,10 +59,10 @@ onMounted(() => {
 
 <template>
   <section id="contact" class="contact-section">
-    <span class="section-label">04 / Contact</span>
-    <h2 class="page-title">Let's talk</h2>
+    <span class="section-label">04 / Contato</span>
+    <h2 class="page-title">Vamos conversar</h2>
     <p class="contact-text">
-      Have a project in mind or an engineering challenge? Let's build something great together.
+      Tem um project em mente ou um engineering challenge? Vamos build algo incrível juntos.
     </p>
     <div class="contact-links">
       <a href="mailto:seu@email.com" class="contact-link">
@@ -73,9 +73,9 @@ onMounted(() => {
         <span class="link-label">GitHub</span>
         <span class="link-value">github.com/joaozupeli</span>
       </a>
-      <a href="https://linkedin.com" target="_blank" class="contact-link">
+      <a href="https://www.linkedin.com/in/joão-zupeli-612a17287/" target="_blank" class="contact-link">
         <span class="link-label">LinkedIn</span>
-        <span class="link-value">linkedin.com/in/seu-perfil</span>
+        <span class="link-value">linkedin.com/in/joão-zupeli-612a17287</span>
       </a>
     </div>
     <footer class="footer">
